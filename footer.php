@@ -7,7 +7,7 @@
     <a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">
         <?php echo get_option( 'ease_blog_beian'); ?>
     </a>
-    <br>Theme: <a href="http://ease.kaygb.top" target="_blank">Ease</a> Made by: <a href="http://kaygb.top" target="_blank">未来小趣</a>
+    <br>Theme: <a href="https://kaygb.top" target="_blank">Ease</a> Made by: <a href="http://kaygb.top" target="_blank">未来小趣</a>
 
     <center>
         <script type="text/javascript">
