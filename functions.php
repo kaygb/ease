@@ -103,11 +103,11 @@ function catch_first_image()
 	}
 // head-ease-sescription-a
 function ease_seo_description_a(){
-    				$ease_seo_description_a = get_option('ease_blog_description_a');
-    				
-    				if ($ease_seo_description_a == "") {
-    					echo bloginfo('description');
-    				}else{
-    					echo $ease_seo_description_a;
-    				}
-    			}
+	$ease_seo_description_a = get_option('ease_blog_description_a');
+	
+	if ($ease_seo_description_a == "") {
+		echo bloginfo('description');
+	}else{
+		echo $ease_seo_description_a;
+	}
+}

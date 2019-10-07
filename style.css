@@ -477,13 +477,13 @@ td {
 /*    float: right;*/
 /*}*/
 .comment-form textarea, .comment-form input{
-    /* margin: 15px 0; */
-    /* padding: 6px 9pt; */
+    margin: 10px 0;
+    /* padding: 10px 2px; */
     width: 100%;
     /* height: 34px; */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
+    border: 0px solid #ccc;
+    /* border-radius: 4px; */
+    background-color: #d5dde5;
 }
 .comment-form input{
     height: 25px;

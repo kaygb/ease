@@ -16,7 +16,7 @@ if ( post_password_required() )
         <h2 class="comments-title">
             <span>评论*</span>
         </h2>
- 
+	<?php spam_protection_math();?>
         <ol class="comment-list">
             <?php
                 wp_list_comments( array(
