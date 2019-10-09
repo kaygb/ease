@@ -6,7 +6,7 @@
 	<title><?php  if (is_home()||is_search()) { ease_seo_name(); echo '-'; ease_seo_description();}else{wp_title(''); echo ' - '; ease_seo_name(); } ?> </title>
 	<meta name="description" content="<?php ease_seo_description()?>" />
 	<meta name="keywords" content="<?php echo get_option('ease_blog_keywords'); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=[1.0.93]" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=[1.0.94]" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="icon" href="https://cdn.kaygb.top/wp-content/uploads/2019/08/logo.png"/>
 	<link href="<?php bloginfo('template_url'); ?>/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
