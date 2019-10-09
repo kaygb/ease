@@ -1,3 +1,4 @@
+<!--制作不易，请保留版权-->
 <div class="footer">Copyright&nbsp&copy&nbsp
     <a href="<?php echo get_option('home'); ?>">
         <?php bloginfo( 'name'); ?>
@@ -10,6 +11,7 @@
     <br>Theme: <a href="https://kaygb.top" target="_blank">Ease</a> Made by: <a href="http://kaygb.top" target="_blank">未来小趣</a>
 
     <center>
+        <?php //echo get_option('ease_blog_statistcs'); ?>
         <script type="text/javascript">
         var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
         document.write(unescape("%3Cspan id='cnzz_stat_icon_1277812206'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +

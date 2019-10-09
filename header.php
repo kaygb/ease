@@ -8,7 +8,7 @@
 	<meta name="keywords" content="<?php echo get_option('ease_blog_keywords'); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=[1.0.94]" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<link rel="icon" href="https://cdn.kaygb.top/wp-content/uploads/2019/08/logo.png"/>
+	<link rel="icon" href="<?php echo get_option('ease_blog_icon'); ?>"/>
 	<link href="<?php bloginfo('template_url'); ?>/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<!--bootstrap-->
 	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->

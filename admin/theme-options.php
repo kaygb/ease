@@ -116,6 +116,13 @@ $options = array(
         'std'   => get_bloginfo( 'name' ) 
     ),
     array(
+        'name'  => '站点ICON图标',
+        'desc'  => '就是浏览器标签上的网站图标哦，这里输入地址',
+        'id'    => 'ease_blog_icon',
+        'type'  => 'text',
+        'std'   => ''
+    ),
+    array(
         'name'  => '博客标题描述',
         'desc'  => '显示在浏览器标签上',
         'id'    => 'ease_blog_description',
@@ -133,7 +140,7 @@ $options = array(
         'name'  => '博客关键字',
         'desc'  => '以英文逗号隔开',
         'id'    => 'ease_blog_keywords',
-        'type'  => 'text',
+        'type'  => 'textarea',
         'std'   => ''
     ),
     array(
@@ -141,6 +148,21 @@ $options = array(
         'desc'  => '页脚备案号,不填则不显示',
         'id'    => 'ease_blog_beian',
         'type'  => 'text',
+        'std'   => ''
+    ),
+    array(
+        'type'  => 'panelend'//标签段的结束
+    ),
+        array(
+        'title' => '页脚设置',
+        'id'    => 'panel_ease_footer',
+        'type'  => 'panelstart'
+    ),
+    array(
+        'name'  => '统计代码',
+        'desc'  => '请包含script标签(暂时不可用，请在footer.php更改)',
+        'id'    => 'ease_blog_statistics',
+        'type'  => 'textarea',
         'std'   => ''
     ),
     array(
