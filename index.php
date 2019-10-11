@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 <div id="" class="wrap">
+    <!--<div  class="ease-alert-d">-->
+    <!--	    -->
+    <!--</div>-->
     <div class="swiper">
         
     </div>
 	<div id="main">
-	    
+
 		<!--文章列表-->
 		<div class="posts">
 			<?php
