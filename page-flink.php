@@ -2,59 +2,8 @@
 /*
 Template Name: 自助友情链接
 */
-get_header();?>
-
-<?php 
-
-//  --自助友链--
-	if (isset($_POST['blink_form']) && $_POST['blink_form'] == 'send') {
-		global $wpdb;
-	
-		// 表单变量初始化
-		$link_name = isset($_POST['blink_name']) ? trim(htmlspecialchars($_POST['blink_name'], ENT_QUOTES)) : '';
-		$link_url = isset($_POST['blink_url']) ? trim(htmlspecialchars($_POST['blink_url'], ENT_QUOTES)) : '';
-		$link_description = isset($_POST['blink_lianxi']) ? trim(htmlspecialchars($_POST['blink_lianxi'], ENT_QUOTES)) : '';
-		$link_image = isset($_POST['blink_image']) ? trim(htmlspecialchars($_POST['blink_image'], ENT_QUOTES)) : '';
-		
-		// 联系方式
-		$link_target = "_blank";
-		$link_visible = "N";
-		
-		// 表示链接默认不可见
-	
-		// 表单项数据验证
-		if (empty($link_name) || mb_strlen($link_name) > 20) {
-			wp_die('链接名称是必填项哦，长度不能超过30字<br><a href="javascript:history.go(-1);">点此返回</a>');
-		}
-	
-		if (empty($link_url) || strlen($link_url) > 60 || !preg_match("/^(https?:\/\/)?(((www\.)?[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)?\.([a-zA-Z]+))|(([0-1]?[0-9]?[0-9]|2[0-5][0-5])\.([0-1]?[0-9]?[0-9]|2[0-5][0-5])\.([0-1]?[0-9]?[0-9]|2[0-5][0-5])\.([0-1]?[0-9]?[0-9]|2[0-5][0-5]))(\:\d{0,4})?)(\/[\w- .\/?%&=]*)?$/i", $link_url)) {
-			//验证url
-			wp_die('链接地址必须填写<br><a href="javascript:history.go(-1);">点此返回</a>');
-		}
-	
-		$sql_link = $wpdb->insert(
-			$wpdb->links,
-			array(
-				'link_name' => '【待审核】- '.$link_name,
-				// 'link_name' => $link_name,
-				'link_url' => $link_url,
-				'link_target' => $link_target,
-				'link_description' => $link_description,
-				'link_visible' => $link_visible,
-				
-			)
-		);
-	
-		$result = $wpdb->get_results($sql_link);
-	
-		wp_die('链接提交成功，请耐心等待站长审核！<br><style>
-		a {
-		    color:#1a1a1a;
-		}
-		</style><a href="javascript:history.go(-1);" style="color:red;" >点此返回</a>', '提交成功');
-	
-	}
-
+get_header();
+ease_auto_flink()
 ?>
 <div id="" class="wrap">
 	<div id="main">
@@ -62,7 +11,7 @@ get_header();?>
             <article class="posts">
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()): the_post(); ?>
-                <h2><?php the_title(); ?></h2>
+                <h1><?php the_title(); ?></h1>
                 <div class="meta">
                     <?php EaseSingleTag(); ?>
                 </div>

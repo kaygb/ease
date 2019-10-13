@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 <div id="" class="wrap">
 	<div id="main">
+	    <?php echo ease_breadcrumbs() ?>
+	    
         <div class="single ease-bg-light"> 
+        
             <article class="posts">
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()): the_post(); ?>
