@@ -53,7 +53,7 @@
 				}
 			}else{ ?>
 				 <!-- echo '没有日志可以显示'; -->
-				<div class="_404">
+				<div class="_404 ease-bg-light">
 						<?php if(is_search()){ ?>
 						<h2 class="entry-title">姿势不对？换个词搜一下~</h2>
 						<div class="entry-content">
@@ -73,6 +73,16 @@
 							<button type="submit" class="search-submit">搜索</button>
 						</form>
 						<?php } ?>
+					<div class="hitokoto">
+            <center><p id='hitokoto' style="padding: 10px;
+    font-size: 20px;">
+                <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+            </p>
+            </center>
+            <img src="http://file.kaygb.top/bg.png" style="width:100%;height:auto;" />
+
+
+        </div>
 					</div>
 			<?php } ?>
 		<div class="page_navi"><?php par_pagenavi(2); ?></div>

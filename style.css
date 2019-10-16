@@ -30,17 +30,17 @@ input {
 input:focus{
     outline: none
 }
-@font-face{
-    font-family: 'AlibabaSans-Regular';
-    src : url('./static/fonts/AlibabaSans-Regular.otf');
-}
+/*@font-face{*/
+/*    font-family: 'AlibabaSans-Regular';*/
+/*    src : url('./static/fonts/AlibabaSans-Regular.otf');*/
+/*}*/
 body{
     font-family: AlibabaSans-Regular;
     position: relative;
     background-color: #f2f3f8;
     /*background-image: linear-gradient( 0deg, transparent 24%, rgba(201, 195, 195, 0.329) 25%, rgba(209, 201, 201, 0.05) 26%, transparent 27%, transparent 74%, rgba(209, 204, 204, 0.185) 75%, rgba(180, 176, 176, 0.05) 76%, transparent 77%, transparent ), linear-gradient( 90deg, transparent 24%, rgba(204, 196, 196, 0.226) 25%, rgba(172, 165, 165, 0.05) 26%, transparent 27%, transparent 74%, rgba(209, 204, 204, 0.185) 75%, rgba(180, 176, 176, 0.05) 76%, transparent 77%, transparent );*/
     /*background-size: 30px 30px;*/
-    background-image: url('http://file.kaygb.top/bg/bg3.jpg');
+    background-image: url('//file.kaygb.top/bg/bg3.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -89,9 +89,9 @@ a:hover{
 #header{
     /* position: fixed; */
     padding-bottom: 20px;
-    background: #fff;
+    /*background: #fff;*/
     width: 100%;
-    box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;
+    /*box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;*/
 }
 #main{
     margin-top: 20px;
@@ -148,9 +148,9 @@ border: 1px 0px solid #464646;
 }
  @media screen and (max-width: 768px){
  	body{
- 		background-image: url('http://file.kaygb.top/bg/mbg4.jpg');
+ 		background-image: url('//file.kaygb.top/bg/mbg4.jpg');
  		background-attachment: fixed;
- 		background-size: cover;
+ 		background-size: contain;
  	}
     #nav-ul {
         /*display: none;*/
@@ -180,6 +180,9 @@ border: 1px 0px solid #464646;
         position: absolute;
         top: 10px;
         right: 30px;
+        background: rgba(255,255,255,0.8);
+    padding: 12px 10px 10px 10px;
+    border-radius: 10px;
     }
     .main-nav {
         width: 100%;
@@ -212,6 +215,8 @@ border: 1px 0px solid #464646;
         position: absolute;
         top: 10px;
         right: 30px;
+	    padding:10px;
+	    border-radius: 10px;
     }
     /*#chk:checked + .main-nav{*/
     /*    right: 0;*/
@@ -239,14 +244,14 @@ border: 1px 0px solid #464646;
     /*box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;*/
 }
 .post-title-t{
-    border-left: 2px solid #000;
-    margin-left: -23px;
-    padding-left: 20px;
+    /*border-left: 2px solid #000;*/
+    /*margin-left: -23px;*/
+    /*padding-left: 20px;*/
 }
 .post-title-t:hover{
-    border-left: 4px solid #000;
-    margin-left: -24px;
-    padding-left: 20px;
+    /*border-left: 4px solid #000;*/
+    /*margin-left: -24px;*/
+    /*padding-left: 20px;*/
 }
 .post-title {
     padding-bottom: 0.5em;
@@ -401,7 +406,7 @@ td {
     margin-top: 50px;
     text-align: center;
     padding: 20px;
-    background: #fff;
+    /*background: #fff;*/
     font-size: 12px;
 }
 .entry-content img {
@@ -559,14 +564,17 @@ pre, .wp-block-code {
     background: cadetblue;
 }
 /* 404 */
+.search-form.inline{
+	margin:20px;
+}
 .search-field.inline-field {
-    width: 50%;
+    width: 70%;
     height: 3rem;
-    margin: 20px;
+    /*margin: 20px;*/
     border: 1px solid #464646;
     padding: 10px;
     border-radius: 20px;
-    background: transparent;
+    background: #fff;
 }
 .search-field.inline-field:hover {
     border-radius: 20px;
@@ -576,12 +584,13 @@ button.search-submit {
     background: #fff;
     border: 1px solid #464646;
     border-radius: 20px;
+    /*width: 20%;*/
     height: 3rem;
     cursor: pointer;
     padding: 10px;
 }
 ._404{
-    margin: 20px;
+    /*margin: 20px;*/
 }
 a#cancel-comment-reply-link {
     color: red;

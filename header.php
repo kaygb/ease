@@ -6,7 +6,7 @@
 	<title><?php  if (is_home()||is_search()) { ease_seo_name(); echo '-'; ease_seo_description();}else{wp_title(''); echo ' - '; ease_seo_name(); } ?> </title>
 	<meta name="description" content="<?php ease_seo_description()?>" />
 	<meta name="keywords" content="<?php echo get_option('ease_blog_keywords'); ?>" />
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=[1.0.99]" type="text/css" />
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=[1.1.00]" type="text/css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="icon" href="<?php echo get_option('ease_blog_icon'); ?>"/>
 	<link href="<?php bloginfo('template_url'); ?>/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -14,8 +14,8 @@
 	<!--<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 	<!--end-bootstrap-->
 	<!--swiper-->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+	<!--<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">  -->
+ <!--   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    -->
     <!--end-swiper-->
 </head>
 <body>
