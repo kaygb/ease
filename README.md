@@ -1,3 +1,4 @@
+BLOG：[eas1.cn](eas1.cn)
 ### 这是一款简约的wordpress主题
 你可以直接点击release下载最新的release版本
 然后通过wordpress后台进行安装或者通过ftp或是各种方式上传到主题目录，然后解压使用。
@@ -8,7 +9,6 @@
         <br>
         目的是创造出一个简单，快速，好看，用起来舒适的主题
     </p>
-    <p>使用教程请访问<a href="https://kaygb.top">未来小趣</a></p>
     <hr>
 <h2>更新日志</h2>
 <hr>
