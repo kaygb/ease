@@ -8,16 +8,10 @@
     <a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">
         <?php echo get_option( 'ease_blog_beian'); ?>
     </a>
-    <br>Theme: <a href="https://kaygb.top" target="_blank">Ease</a> Made by: <a href="http://kaygb.top" target="_blank">未来小趣</a>
+    <br>Theme: <a href="https://github.com/kaygb/ease" target="_blank">Ease</a> Made by: <a href="https://eas1.cn" target="_blank">风也</a>
 
     <center>
         <?php //echo get_option('ease_blog_statistcs'); ?>
-        <script type="text/javascript">
-        var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
-        document.write(unescape("%3Cspan id='cnzz_stat_icon_1277812206'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
-            "s5.cnzz.com/z_stat.php%3Fid%3D1277812206%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript" src="https://js.users.51.la/20169761.js"></script>
     </center>
 </div>
 <!--返回顶部-->
