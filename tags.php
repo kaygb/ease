@@ -24,7 +24,6 @@ Template Name: 标签页面
                 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
             </p>
             </center>
-            <img src="http://file.kaygb.top/bg.png" style="width:100%;height:auto;" />
 
 
         </div>

@@ -8,7 +8,7 @@
             <article class="posts">
                 <?php if(have_posts()) : ?>
                 <?php while(have_posts()): the_post(); ?>
-                <h1 style="font-size: 1.3em;"><?php the_title(); ?></h1>
+                <h1><?php the_title(); ?></h1>
                 <div class="meta">
                     <!--判断是否single以显示文章分类-->
                     <?php EaseSingleTag(); ?>

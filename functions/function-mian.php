@@ -14,7 +14,7 @@ add_filter ('the_excerpt_rss', 'feed_read_more');
 register_nav_menus(
     array(
         'top' => __('主菜单', 'ease'),
-        'social' => __('测试菜单', 'ease'),
+        // 'social' => __('测试菜单', 'ease'),
     )
 );
 

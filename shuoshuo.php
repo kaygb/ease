@@ -146,7 +146,7 @@
             <div id="shuoshuo_content">
                 <ul class="cbp_tmtimeline">
                     <?php query_posts("post_type=shuoshuo&post_status=publish&posts_per_page=-1");if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <li> <span class="shuoshuo_author_img"><img src="//cdn.kaygb.top/logo/logo.png" class="avatar avatar-48" width="48" height="48"></span>
+                    <li> <span class="shuoshuo_author_img"><img src="<?php global $current_user;get_currentuserinfo();echo get_avatar( $current_user->user_email, 32); ?>" class="avatar avatar-48" width="48" height="48"></span>
                         <a class="cbp_tmlabel" href="javascript:void(0)">
                             <p></p>
                             <p><?php the_title(); ?></p>
