@@ -10,7 +10,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="icon" href="<?php echo get_option('ease_blog_icon'); ?>"/>
 	<link href="<?php bloginfo('template_url'); ?>/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
+	<style>
+		<?php echo get_option( 'ease_blog_zdycss'); ?>
+	</style>
+	<?php echo get_option( 'ease_blog_zdyhead'); ?>
 </head>
 <body>
 	<!-- header -->

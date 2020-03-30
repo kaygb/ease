@@ -1083,7 +1083,7 @@ a#cancel-comment-reply-link {
     position: absolute;
     left: 120px;
     content: "";
-    top: 0
+    top: 80px
 }
 
 .m-title {

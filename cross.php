@@ -1,5 +1,5 @@
     <?php /*
-        Template Name: 说说
+        Template Name: 动态
         author: 秋叶
         url: http://www.mizuiren.com/141.html
         */

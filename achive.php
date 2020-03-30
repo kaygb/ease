@@ -5,7 +5,7 @@ Template Name: 文章归档
 get_header(); ?>
 <div id="" class="wrap">
     <div class="archives ease-bg-light">
-        <h3>文章归档</h3>
+        <h1>文章归档</h1>
 <?php
 			$previous_year = $year = 0;
 			$previous_month = $month = 0;

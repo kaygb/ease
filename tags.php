@@ -10,7 +10,7 @@ Template Name: 标签页面
     <div id="main">
 
         <div class="single ease-bg-light">
-            <h3>标签云</h3>
+            <h1>标签云</h1>
             <div class="ease-tags">
                 <?php wp_tag_cloud('smallest=16&largest=16&unit=px&number=5000');
                 ?>

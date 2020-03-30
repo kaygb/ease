@@ -29,28 +29,14 @@
             if(is_single()){  ?>
                 <div class="ease-post-links ease-bg-light">
             <div class="ease-next-post-link">
-                上一篇：
-                <?php 
-                    if(previous_post_link('%link') == ""){
-                        // echo "没有了";
-                        
-                    }else{
-                        previous_post_link('%link'); 
-                    }
-                ?>
+            <?php if (get_previous_post()) { previous_post_link('上一篇: %link');} else {echo "上一篇: 没有了！";} ?>
                 
             </div>
             <br>
+
+
             <div class="ease-previous-post-link">
-                下一篇：
-                <?php 
-                    if(next_post_link('%link') == ""){
-                        // echo "没有了";
-                        // var_dump(next_post_link('%link')); 
-                    }else{
-                        next_post_link('%link'); 
-                    }
-                ?>
+            <?php if (get_next_post()) { next_post_link('下一篇: %link');} else {echo "下一篇: 已是最新文章";} ?>
                 
             </div>
         </div>

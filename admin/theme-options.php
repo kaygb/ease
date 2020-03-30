@@ -100,14 +100,10 @@ $options = array(
     //     'type'  => 'panelend'//标签段的结束
     // ),
     array(
-        'title' => 'SEO设置',
+        'title' => '基本设置',
         'id'    => 'panel_ease_basic',
         'type'  => 'panelstart'
     ),
-    array(
-            'title' => '这里为head头部代码的设置',//二级标题，只显示文字，没有选项
-            'type'  => 'subtitle'//二级标题的类型
-        ),
     array(
         'name'  => '站点名称',
         'desc'  => '这里是输入博客的名称,将覆盖原有设置',
@@ -116,8 +112,8 @@ $options = array(
         'std'   => get_bloginfo( 'name' ) 
     ),
     array(
-        'name'  => '站点ICON图标',
-        'desc'  => '就是浏览器标签上的网站图标哦，这里输入地址',
+        'name'  => '站点favicon图标',
+        'desc'  => '浏览器标签上的图标，可以输入外链或相对路径',
         'id'    => 'ease_blog_icon',
         'type'  => 'text',
         'std'   => ''
@@ -151,25 +147,74 @@ $options = array(
         'std'   => ''
     ),
     array(
+        'name'  => '网站开始时间',
+        'desc'  => '填写开始年份，在底部显示',
+        'id'    => 'ease_blog_begintime',
+        'type'  => 'text',
+        'std'   => '2018'
+    ),
+    array(
         'type'  => 'panelend'//标签段的结束
     ),
-        array(
-        'title' => '页脚设置',
+
+
+    array(
+        'title' => '自定义代码',
         'id'    => 'panel_ease_footer',
         'type'  => 'panelstart'
     ),
     array(
-        'name'  => '统计代码',
-        'desc'  => '请包含script标签(暂时不可用，请在footer.php更改)',
-        'id'    => 'ease_blog_statistics',
+        'name'  => '自定义输出< head>头部的HTML代码',
+        'desc'  => '输出在< head>< /head>标签之之内',
+        'id'    => 'ease_blog_zdyhead',
+        'type'  => 'textarea',
+        'std'   => ''
+    ),
+    array(
+        'name'  => '自定义输出< /body>尾部的HTML代码',
+        'desc'  => '输出在< /body>标签之前',
+        'id'    => 'ease_blog_zdybbody',
+        'type'  => 'textarea',
+        'std'   => ''
+    ),
+    array(
+        'name'  => '自定义CSS',
+        'desc'  => '输出在< /head>标签之前的< style>< /style>标签之内',
+        'id'    => 'ease_blog_zdycss',
+        'type'  => 'textarea',
+        'std'   => ''
+    ),
+    array(
+        'name'  => '自定义JS',
+        'desc'  => '输出在< /body>标签之前的< script>< /script>标签内',
+        'id'    => 'ease_blog_zdyjs',
         'type'  => 'textarea',
         'std'   => ''
     ),
     array(
         'type'  => 'panelend'//标签段的结束
     ),
+
+
     array(
-        'title' => '社交设置',
+        'title' => '速度优化',
+        'id'    => 'panel_ease_speed',
+        'type'  => 'panelstart'
+    ),
+    array(
+        'name'  => 'Gravatar头像镜像',
+        'desc'  => '默认为v2ex镜像cdn.v2ex.com/gr，修改请输入域名，后面需要加上斜杠 /，比如：gravatar.loli.net/ ',
+        'id'    => 'ease_blog_gravatar',
+        'type'  => 'text',
+        'std'   => 'cdn.v2ex.com/gr'
+    ),
+
+
+    array(
+        'type'  => 'panelend'//标签段的结束
+    ),
+    array(
+        'title' => '社交设置（待开发）',
         'id'    => 'panel_ease_social',
         'type'  => 'panelstart'
     ),
@@ -430,7 +475,7 @@ switch ( $value['type'] ) {
         <br>
         目的是创造出一个简单，快速，好看，用起来舒适的主题
     </p>
-    <p>使用教程请访问<a href="https://kaygb.top">未来小趣</a></p>
+    <p>使用教程请访问<a href="https://eas1.cn">Ease使用文档</a></p>
     <hr>
 <h2>更新日志</h2>
 <hr>
