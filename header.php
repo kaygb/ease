@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo get_bloginfo('charset'); ?>" />
-	<meta http-equiv="refresh" content="30">
+	<!-- <meta http-equiv="refresh" content="30"> -->
 	<title><?php  if (is_home()||is_search()) { ease_seo_name(); echo '-'; ease_seo_description();}else{wp_title(''); echo ' - '; ease_seo_name(); } ?> </title>
 	<meta name="description" content="<?php ease_seo_description()?>" />
 	<meta name="keywords" content="<?php echo get_option('ease_blog_keywords'); ?>" />
