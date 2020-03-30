@@ -154,7 +154,7 @@
                             <p><?php the_title(); ?></p>
                             <p></p>
                             <p class="shuoshuo_time"><i class="fa fa-clock-o"></i>
-                                <?php the_time('Y年n月j日G:i'); ?>
+                                <?php the_time('Y年 n月 j日 G:i'); ?>
                             </p>
                         </a>
                         <?php endwhile;endif; ?>
