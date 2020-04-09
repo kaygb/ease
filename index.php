@@ -20,18 +20,6 @@
 					<div class="post-item ease-bg-light">
 						<div class="post-title"><h2 class="post-title-t"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
 						
-						    <?php if ( has_post_thumbnail() ) : ?>
-						    <a href="<?php the_permalink(); ?>">
-						    <div class="post-thumbnail">
-                                 <?php the_post_thumbnail( 'full' ); ?>
-                            </div></a>
-                            <?php else: ?>
-                                <?php if(catch_first_image() !== ""){ ?>
-                                <!--<div class="post-thumbnail">-->
-                                <!--     <img src="<?php echo catch_first_image(); ?>">-->
-                                <!--</div> -->
-                                <?php }else{ } ?>
-                            <?php endif; ?>
 						
 						<div class="post-excerpt"><?php the_excerpt(); ?></div>
 						<div class="post-meta">
@@ -79,7 +67,7 @@
                 <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
             </p>
             </center>
-            <img src="http://file.kaygb.top/bg.png" style="width:100%;height:auto;" />
+            
 
 
         </div>

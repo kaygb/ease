@@ -69,17 +69,17 @@ function ease_breadcrumbs() {
 //判断single还是page调用文章下方的作者和分类信息
 function EaseSingleTag() {
     if (is_single()) {
-        echo '<span class="post-meta-category">';
+        echo '<span class="post-meta-time">';
         the_category();
         echo '</span>';
-        echo '<span class="post-meta-time">';
-        the_time('Y 年 n 月 j 日');
+        echo '<span class="post-meta-category">';
+        the_time('Y-n-j');
         echo '</span>';
     } else {
         echo '<span class="post-meta-author">';
         the_author();
         echo '</span><span class="post-meta-time">';
-        the_time('Y 年 n 月 j 日');
+        the_time('Y-n-j');
         echo '</span>';
     }
 }

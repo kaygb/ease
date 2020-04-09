@@ -2,7 +2,7 @@
 Theme Name: Ease
 Theme URI: https://github.com/kaygb/ease
 Description: 一款简约，专注于写作的wordpress博客主题
-Version: 1.4.2
+Version: 1.4.3
 Author: 风也
 Author URI: https://eas1.cn/
 */
@@ -86,8 +86,29 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+    margin: 10px 0;
     padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5,
+h6 {
+    font-size: 1em;
 }
 
 html {
@@ -101,22 +122,6 @@ input {
 
 input:focus {
     outline: none
-}
-
-h1 {
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 25px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-h4 {
-    font-size: 17px;
 }
 
 
@@ -138,6 +143,7 @@ body {
     background-image: linear-gradient( 0deg, transparent 24%, rgba(201, 195, 195, 0.329) 25%, rgba(209, 201, 201, 0.05) 26%, transparent 27%, transparent 74%, rgba(209, 204, 204, 0.185) 75%, rgba(180, 176, 176, 0.05) 76%, transparent 77%, transparent), linear-gradient( 90deg, transparent 24%, rgba(204, 196, 196, 0.226) 25%, rgba(172, 165, 165, 0.05) 26%, transparent 27%, transparent 74%, rgba(209, 204, 204, 0.185) 75%, rgba(180, 176, 176, 0.05) 76%, transparent 77%, transparent);
     background-size: 30px 30px;
     overflow-y: scroll;
+    line-height: 2em;
 }
 
 
@@ -223,7 +229,7 @@ a:hover {
 
 #header {
     /* position: fixed; */
-    padding-bottom: 20px;
+    padding: 20px;
     background: #fff;
     width: 100%;
     box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;
@@ -396,28 +402,6 @@ border: 1px 0px solid #464646;
     position: absolute;
 }
 
-.post-item {
-    /*background: #fff;*/
-    /*padding: 20px 20px;*/
-    /*line-height: 1.5em;*/
-    /*margin-bottom: 20px;*/
-    /*border: 1px solid #eee;*/
-    /*border-radius: 0.25rem;*/
-    /*box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;*/
-}
-
-.post-title-t {
-    /*border-left: 2px solid #000;*/
-    /*margin-left: -23px;*/
-    /*padding-left: 20px;*/
-}
-
-.post-title-t:hover {
-    /*border-left: 4px solid #000;*/
-    /*margin-left: -24px;*/
-    /*padding-left: 20px;*/
-}
-
 .post-title {
     padding-bottom: 0.5em;
 }
@@ -425,18 +409,13 @@ border: 1px 0px solid #464646;
 .post-meta {
     /* padding-bottom: 10px; */
     word-break: keep-all;
+    color: #fff;
 }
 
 .post-excerpt p {
     font-size: 0.9em;
     font-weight: 300;
     margin-bottom: 5px;
-}
-
-.meta {
-    border-bottom: 1px solid #eee;
-    /*background: antiquewhite;*/
-    padding: 5px;
 }
 
 .wp-block-pullquote {
@@ -592,10 +571,6 @@ td {
     /*box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;*/
 }
 
-.single .posts h3 {
-    border-bottom: 1px solid #eee;
-}
-
 .footer {
     margin-top: 50px;
     text-align: center;
@@ -611,14 +586,6 @@ td {
     margin: 10px auto;
     /* padding: 2px; */
     border-radius: 5px;
-}
-
-.entry-content h2 {
-    border-left: 2px solid #000;
-    padding-left: 10px;
-    margin-left: -12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .wp-block-quote {
@@ -685,39 +652,6 @@ td {
     background: #eee;
 }
 
-
-/*.comment-area{*/
-
-
-/*    display: block;*/
-
-
-/*}*/
-
-
-/*.comment-form-comment{*/
-
-
-/*    width: 40%;*/
-
-
-/*    float: left;*/
-
-
-/*}*/
-
-
-/*.comment-form-author,.comment-form-email,.comment-form-url{*/
-
-
-/*    width: 40%;*/
-
-
-/*    float: right;*/
-
-
-/*}*/
-
 .comment-form textarea,
 .comment-form input {
     margin: 10px 0;
@@ -754,35 +688,6 @@ td {
 
 
 /* 代码块 */
-
-pre,
-.wp-block-code {
-    /* background: #eee; */
-    /* padding: 10px; */
-    border: 1px solid #bfb3b3;
-    margin: 10px 0;
-    padding: 5px 5px;
-    font-size: 13px;
-    max-height: 500px;
-    overflow-y: scroll;
-    overflow-x: scroll;
-    /* background: #282c34; */
-    /* color: #f5f5f5; */
-    color: #5a5454;
-    line-height: 20px;
-    background: #eee;
-}
-
-.wp-block-code {
-    font-size: 14px;
-    padding: .8em 1em;
-    background: #fafafa;
-    border: 1px solid #e2e4e7;
-    border-radius: 4px;
-    margin: 5px 0;
-    /* word-break: break-all; */
-    overflow: auto;
-}
 
 .entry-content ul,
 .entry-content ol {
