@@ -375,9 +375,10 @@ border: 1px 0px solid #464646;
     }
     .menu-item {
         padding: 10px 0;
-        display: block;
+        display: flex;
         margin: auto;
-        /*border-bottom: 1px solid #096;*/
+        font-weight: bold;
+        font-size: 1.2em;
     }
     .ease-nav li {
         width: 100%;

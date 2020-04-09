@@ -18,7 +18,7 @@
 					the_post();
 					?>
 					<div class="post-item ease-bg-light">
-						<div class="post-title"><h2 class="post-title-t"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
+						<div class="post-title"><h1 class="post-title-t"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1></div>
 						
 						
 						<div class="post-excerpt"><?php the_excerpt(); ?></div>
@@ -43,12 +43,12 @@
 				 <!-- echo '没有日志可以显示'; -->
 				<div class="_404 ease-bg-light">
 						<?php if(is_search()){ ?>
-						<h2 class="entry-title">姿势不对？换个词搜一下~</h2>
+						<h1 class="entry-title">姿势不对？换个词搜一下~</h1>
 						<div class="entry-content">
 							抱歉，没有找到“<?php echo $s; ?>”的相关内容
 						</div>
 						<?php } elseif(is_404()) { ?>
-						<h2 class="entry-title">抱歉，这个页面不存在！</h2>
+						<h1 class="entry-title">抱歉，这个页面不存在！</h1>
 						<div class="entry-content">
 							它可能已经被删除，或者您访问的URL是不正确的。也许您可以试试搜索？
 						</div>
