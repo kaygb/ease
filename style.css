@@ -284,6 +284,8 @@ border: 1px 0px solid #464646;
     padding: 10px 0;
     display: flex;
     margin: auto;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .navbutton {
@@ -375,10 +377,9 @@ border: 1px 0px solid #464646;
     }
     .menu-item {
         padding: 10px 0;
-        display: flex;
+        display: block;
         margin: auto;
-        font-weight: bold;
-        font-size: 1.2em;
+        /*border-bottom: 1px solid #096;*/
     }
     .ease-nav li {
         width: 100%;
