@@ -4,8 +4,16 @@ Template Name: 文章归档
 */
 get_header(); ?>
 <div id="" class="wrap">
-    <div class="archives ease-bg-light">
-        <h1>文章归档</h1>
+<div class="archives ease-bg-light">
+		<h1>文章归档</h1>
+
+            <div class="ease-tags">
+                <?php wp_tag_cloud('smallest=16&largest=16&unit=px&number=5000');
+                ?>
+                <!--//smallest是最小字号,largest是最大字号,unit是单位,number是显示关键词个数,默认是45个-->
+
+            </div>
+
 <?php
 			$previous_year = $year = 0;
 			$previous_month = $month = 0;
@@ -32,6 +40,17 @@ get_header(); ?>
 			</li>
 			<?php endforeach; ?>
 			</ul>
-			</div></div>
+			</div>
+			<div class="hitokoto ease-bg-light">
+            <center><p id='hitokoto' style="padding: 10px;
+    font-size: 20px;">
+                <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+            </p>
+            </center>
+
+
+        </div>
+		</div>
+			
 </div>
 <?php get_footer(); ?>

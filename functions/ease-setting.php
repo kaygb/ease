@@ -70,10 +70,11 @@ function ease_breadcrumbs() {
 function EaseSingleTag() {
     if (is_single()) {
         echo '<span class="post-meta-time">';
-        the_category();
+        
+        the_time('Y-n-j');
         echo '</span>';
         echo '<span class="post-meta-category">';
-        the_time('Y-n-j');
+        the_category();
         echo '</span>';
     } else {
         echo '<span class="post-meta-author">';
