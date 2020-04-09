@@ -1076,16 +1076,6 @@ a#cancel-comment-reply-link {
     position: relative;
 }
 
-.archives:before {
-    height: 100%;
-    width: 4px;
-    background: #eee;
-    position: absolute;
-    left: 120px;
-    content: "";
-    top: 80px
-}
-
 .m-title {
     position: relative;
     margin: 10px 0;
