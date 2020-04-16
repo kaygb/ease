@@ -24,7 +24,7 @@
 <script>
 window.theme_url = "<?php echo get_template_directory_uri(); ?>";
 </script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/wp-heightlight.js" type="text/javascript"></script>
+<!-- <script src="<?php //echo get_template_directory_uri(); ?>/js/wp-heightlight.js" type="text/javascript"></script> -->
 
 
 

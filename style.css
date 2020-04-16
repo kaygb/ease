@@ -237,7 +237,7 @@ a:hover {
 
 #header {
     /* position: fixed; */
-    padding: 20px;
+    padding: 20px 0;
     background: #fff;
     width: 100%;
     box-shadow: 0 0.4rem 0.8rem -0.1rem rgba(0, 32, 128, 0.1), 0 0 0 1px #f0f2f7;
