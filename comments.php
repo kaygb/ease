@@ -9,9 +9,8 @@
 if ( post_password_required() )
     return;
 ?>
- 
-<div id="comments" class="comments-area">
- 
+<div class="ease-comment ease-bg-light">
+	<div id="comments" class="comments-area">
     <?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
             <span>评论*</span>
@@ -37,7 +36,6 @@ if ( post_password_required() )
             <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ease' ) ); ?></div>
         </nav><!-- .comment-navigation -->
         <?php endif; // Check for comment navigation ?>
- 
         <?php if ( ! comments_open() && get_comments_number() ) : ?>
         <p class="no-comments"><?php _e( '评论已关闭！' , 'ease' ); ?></p>
         <?php endif; ?>
@@ -47,3 +45,4 @@ if ( post_password_required() )
     <?php comment_form(); ?>
  
 </div><!-- #comments -->
+</div>
