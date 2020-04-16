@@ -18,8 +18,9 @@
 </div>
 <!--end-返回顶部-->
 <!-- highlightjs -->
-<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/highlightjs-line-numbers.js@2.7.0/dist/highlightjs-line-numbers.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
 <script>
 window.theme_url = "<?php echo get_template_directory_uri(); ?>";
@@ -36,6 +37,13 @@ window.theme_url = "<?php echo get_template_directory_uri(); ?>";
     <?php
     echo get_option( 'ease_blog_zdyjs');
     ?>
+    hljs.initHighlightingOnLoad();
+hljs.initLineNumbersOnLoad();
+    $(document).ready(function() {
+    $('code.hljs').each(function(i, block) {
+        hljs.lineNumbersBlock(block);
+    });
+});
 </script>
 </body>
 
