@@ -3,8 +3,8 @@
         <?php bloginfo( 'name'); ?>
     </a>
     
-    <br>Theme: <a href="https://github.com/kaygb/ease" target="_blank">Ease</a> Made by <a href="https://eas1.cn" target="_blank">风也</a> with heart!
-    <br/>
+    <br>Theme: <a href="https://github.com/kaygb/ease" target="_blank">Ease</a>
+
     <a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow">
         <?php echo get_option( 'ease_blog_beian'); ?>
     </a>
