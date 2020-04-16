@@ -946,10 +946,6 @@ a#cancel-comment-reply-link {
     display: block
 }
 
-.archives li a:hover .atitle:after {
-    background: #ff5c43
-}
-
 .archives li a span {
     display: inline-block;
     width: 100px;
@@ -961,28 +957,6 @@ a#cancel-comment-reply-link {
     display: inline-block;
     padding: 0 15px;
     position: relative
-}
-
-.archives li a .atitle:after {
-    position: absolute;
-    left: -6px;
-    background: #ccc;
-    height: 8px;
-    width: 8px;
-    border-radius: 6px;
-    top: 8px;
-    content: ""
-}
-
-.archives li a .atitle:before {
-    position: absolute;
-    left: -8px;
-    background: #fff;
-    height: 12px;
-    width: 12px;
-    border-radius: 6px;
-    top: 6px;
-    content: ""
 }
 
 .archives {
