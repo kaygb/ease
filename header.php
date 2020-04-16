@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo get_bloginfo('charset'); ?>" />
 	<!-- <meta http-equiv="refresh" content="30"> -->
-	<title><?php  if (is_home()||is_search()) { ease_seo_name(); echo '-'; ease_seo_description();}else{wp_title(''); echo ' - '; ease_seo_name(); } ?> </title>
+	<title><?php  if (is_home()||is_search()) { ease_seo_name(); echo ' - '; ease_seo_description();}else{wp_title(''); echo ' - '; ease_seo_name(); } ?> </title>
 	<meta name="description" content="<?php ease_seo_description()?>" />
 	<meta name="keywords" content="<?php echo get_option('ease_blog_keywords'); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=[1.1.00]" type="text/css" />
@@ -12,7 +12,7 @@
 	<link href="<?php bloginfo('template_url'); ?>/static/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <!-- highlightjs -->
 <link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css">
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/atom-one-light.min.css">
 	<style>
 		<?php echo get_option( 'ease_blog_zdycss'); ?>
 	</style>
