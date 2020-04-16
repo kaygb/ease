@@ -995,32 +995,6 @@ a#cancel-comment-reply-link {
     cursor: pointer
 }
 
-.m-title:hover:after {
-    background: #ff5c43
-}
-
-.m-title:before {
-    position: absolute;
-    left: 127px;
-    background: #fff;
-    height: 18px;
-    width: 18px;
-    border-radius: 6px;
-    top: 3px;
-    content: ""
-}
-
-.m-title:after {
-    position: absolute;
-    left: 96px;
-    background: #ccc;
-    height: 12px;
-    width: 12px;
-    border-radius: 6px;
-    top: 6px;
-    content: ""
-}
-
 @media screen and (max-width: 768px) {
     .archives:before,
     .m-title:after {
