@@ -44,9 +44,10 @@
             
         <?php } ?>
         
-        <div class="ease-comment ease-bg-light">
-        <?php comments_template(); ?>
-        </div>
+        <!-- 评论 -->
+        <?php if ( comments_open() || get_comments_number() ) : ?>
+        <?php comments_template( '', true ); ?>
+        <?php endif; ?>
 	</div>
 </div>
 <?php get_footer(); ?>
