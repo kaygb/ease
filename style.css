@@ -152,6 +152,7 @@ body {
     background-size: 30px 30px;
     overflow-y: scroll;
     line-height: 2em;
+    letter-spacing: 1px !important;
 }
 
 
