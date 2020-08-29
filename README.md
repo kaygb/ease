@@ -14,3 +14,5 @@ BLOG：[eas1.cn](https://eas1.cn)
 从release下载最新版本，解压之后将文件夹重命名为`ease`，然后启用即可！
 
 如果您使用过程中遇到一些问题，那么请直接使用master分支！
+
+[![](https://img.shields.io/github/license/kaygb/ease)](https://github.com/kaygb/ease/blob/master/LICENSE)
