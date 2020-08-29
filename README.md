@@ -15,4 +15,4 @@ BLOG：[eas1.cn](https://eas1.cn)
 
 如果您使用过程中遇到一些问题，那么请直接使用master分支！
 
-[![](https://img.shields.io/github/license/kaygb/ease)](https://github.com/kaygb/ease/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/kaygb/kaygb)](https://github.com/kaygb/ease/blob/master/LICENSE)
